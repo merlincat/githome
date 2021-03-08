@@ -7,54 +7,75 @@
     <title>forms</title>
 </head>
 <body>
-       <form action="#" method="post" enctype="multipart/form-data">
+       <form action="#" method="get" enctype="multipart/form-data">
            <fieldset>
                <legend>Загальна інфа</legend>
-               <input type="text" disabled value="Реєстрація"><br><br>
-               <input type="text" name="first_name" value="Ім'я"><br><br>
-               <input type="text" required value="Поле обов'язкове"><br><br>
-               <input type="email" placeholder="Ваш е-меіл"><br><br>
-               <input type="password" maxlength="10"><br><br>
-               <input type="date"><br><br>
-               <input type="time"><br><br>
-               <input type="number" min="1" max="50"><br><br>
-                <input type="radio" name="gender" value="ж" id="female"><label for="female">жінка</label>
-                <input type="radio" name="gender" value="ч" id="male"><label for="male">чоловік</label>
-                <input type="radio" name="gender" value="не маю" id="none"><label for="none">не маю</label><br><br>
+                <p>Заголовок</p>
+                <input type="text" disabled placeholder="Анкета">
+                <br>
+                <p>Ваше ім'я</p><input type="text" name="first_name" value="Ім'я">
+                <br>
+                <p>Придумайте нікнейм</p>
+                <input type="text" name="username" required value="Поле обов'язкове">
+               <br>
+               <p>Ваш е-меіл</p>
+               <input type="email" name="email" value="username@gmail.com">
+               <br>
+               <p>Придумайте пароль</p>
+               <input type="password" name="userpass" maxlength="10"><br>
+               <p>Ваш день народження</p>
+               <input type="date" name="birth"><br>
+               <p>Скільки часу вам потрбно, щоб заповнити форму?</p>
+               <input type="time" name="timer"><br>
+               <p>Ваше улюблене число</p>
+               <input type="number" name="chislo" min="1" max="50"><br>
+               <p>Оберіть свій гендер</p>
+                <input type="radio" name="gender" value="fem" id="female"><label for="female">жінка</label>
+                <input type="radio" name="gender" value="male" id="male"><label for="male">чоловік</label>
+                <input type="radio" name="gender" value="none" id="none"><label for="none">не маю</label><br><br>
+                <p>Що хотіли б вивчати?</p>
                 <label><input type="checkbox" name="lang[]" value="HTML" checked>HTML</label>
                 <label><input type="checkbox" name="lang[]" value="CSS">CSS</label>
                 <label><input type="checkbox" name="lang[]" value="JS">JS</label><br><br>
            </fieldset>
            <fieldset>
                <legend>Персональна інфа</legend>
-               <input type="color"><br><br>
-               <input type="tel" maxlength="12"><br><br>
-               <input type="url" value="https://www.google.com/"><br><br>
-               <input type="range" min="0" max="10"><br><br>
-               <input type="file"><br><br>
+               <p>Ваш улюблений колір</p>
+               <input type="color" mame="fcolor"><br>
+               <p>Ваш номер телефону</p>
+               <input type="tel" name="phonenumber" maxlength="12"><br>
+               <p>Посилання на LinkedIn</p>
+               <input type="url" name="linkedin" value="https://www.google.com/"><br>
+               <p>На скільки Вам цікава дана анкета?</p>
+               <input type="range" name="level" min="0" max="10"><br>
+               <p>Завантажте ваше фото</p>
+               <input type="file" name="userphoto"><br><br>
            </fieldset>
            <fieldset>
                <legend>Списочок</legend>
-               <select name="something" size="1">
+               <p>Оберіть підходящий вам варіант</p>
+               <select name="pets" size="1">
                 <option>--Оберіть один варіант--</option>
-                <option value="one">Щось1</option>
-                <option value="two">Щось2</option>
-                <option value="three">Щось3</option>
-                <option value="four">Щось4</option>
-                <option value="five">Щось5</option>
-                <option value="six">Щось6</option>
-            </select><br><br>
-                <select name="something[]" multiple size="3">
+                <option value="cat">Коти</option>
+                <option value="dog">Собаки</option>
+                <option value="fish">Рибки</option>
+                <option value="hamster">Хом'яки</option>
+            </select><br>
+                <p>Оберіть декілька варіантів, що вам підходять</p>
+                <select name="food[]" multiple size="3">
                 <option disabled>--Оберіть декілька варіантів--</option>
-                <option value="one">Щось1</option>
-                <option value="two">Щось2</option>
-                <option value="three">Щось3</option>
-                <option value="four">Щось4</option>
-                <option value="five">Щось5</option>
-                <option value="six">Щось6</option>
-            </select><br><br>
-                <textarea rows="10" cols="25" maxlength="50" placeholder="Тут можна писати тільки 50 символів"></textarea>
+                <option value="meat">М'ясо</option>
+                <option value="fish">Риба</option>
+                <option value="salad">Салат</option>
+                <option value="pudding">Пудинг</option>
+                <option value="cake">Пиріг</option>
+                <option value="ice-cream">Морозиво</option>
+            </select><br>
+            <p>Напишіть декілька слів про себе</p>
+                <textarea name="userabout" maxlength="50" placeholder="Тут можна писати тільки 50 символів"></textarea>
            </fieldset>
+           <button type="submit">Зберегти</button>
+            <button type="reset">Стерти</button>
        </form>
 </body>
 </html>
