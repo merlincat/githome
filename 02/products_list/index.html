@@ -1,12 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ShopList</title>
+    <style>
+        .osnova {
+            display: flex;
+        }
+        .fruits {
+            width: 30%;
+        }
+        .vegs {
+            width: 70%;
+        }
+    </style>
 </head>
 <body>
-    <h1>Prod List</h1>
+   <header>
+       <h1>СПИСОК ПОКУПОК</h1>
+   </header> 
+   <main class="osnova">
+       <section class="fruits">
+            <h3>На сладкий стол</h3>
+                <ol>
+                    <li><label><input type="checkbox">яблоки</label></li>
+                    <li><label><input type="checkbox">бананы</label></li>
+                    <li><label><input type="checkbox">груши</label></li>
+                    <li><label><input type="checkbox">мандарины</label></li>
+                    <li><label><input type="checkbox">ананас</label></li>
+                    <li><label><input type="checkbox">виноград</label></li>
+                    <li><label><input type="checkbox">персик</label></li>
+                 </ol>
+               
+            <h3>ЗАПРАВКИ</h3>
+                <ol>
+                    <li><label><input type="checkbox">сметана</label></li>
+                    <li><label><input type="checkbox">йогурт</label></li>
+                    <li><label><input type="checkbox">кунжут</label></li>
+                </ol>
+<!--сделала список через ol, одела в label, поставила чекбоксы, галочку сначала не ставим (чекед), так как это список покупок-->
+       </section>
+       <section class="vegs">
+           <h3>На салат и соте</h3>
+        <form>
+            <fieldset>
+             <legend>ОВОЩИ:</legend>
+                <label><input type="checkbox">черри</label><br>
+                <label><input type="checkbox">огурцы</label><br>
+                <label><input type="checkbox">батат</label><br>
+                <label><input type="checkbox">баклажаны</label><br>
+                <label><input type="checkbox">авокадо</label><br>
+                <label><input type="checkbox">морковь</label><br>
+                <label><input type="checkbox">перец</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>ЗАПРАВКИ</legend>
+                <label><input type="checkbox">оливковое масло</label><br>
+                <label><input type="checkbox">соевый соус</label><br>
+                <label><input type="checkbox">имбирь</label><br>
+               </fieldset>
+        </form>
+        <!--сделала через форму и филдсет-рамку, так понравилось побольше-->
+    </section>
+   </main>
 </body>
 </html>

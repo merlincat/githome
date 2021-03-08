@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+       <form action="#" method="post" enctype="multipart/form-data">
+           <fieldset>
+               <legend>Загальна інфа</legend>
+               <input type="text" disabled value="Реєстрація"><br><br>
+               <input type="text" name="first_name" value="Ім'я"><br><br>
+               <input type="text" required value="Поле обов'язкове"><br><br>
+               <input type="email" placeholder="Ваш е-меіл"><br><br>
+               <input type="password" maxlength="10"><br><br>
+               <input type="date"><br><br>
+               <input type="time"><br><br>
+               <input type="number" min="1" max="50"><br><br>
+                <input type="radio" name="gender" value="ж" id="female"><label for="female">жінка</label>
+                <input type="radio" name="gender" value="ч" id="male"><label for="male">чоловік</label>
+                <input type="radio" name="gender" value="не маю" id="none"><label for="none">не маю</label><br><br>
+                <label><input type="checkbox" name="lang[]" value="HTML" checked>HTML</label>
+                <label><input type="checkbox" name="lang[]" value="CSS">CSS</label>
+                <label><input type="checkbox" name="lang[]" value="JS">JS</label><br><br>
+           </fieldset>
+           <fieldset>
+               <legend>Персональна інфа</legend>
+               <input type="color"><br><br>
+               <input type="tel" maxlength="12"><br><br>
+               <input type="url" value="https://www.google.com/"><br><br>
+               <input type="range" min="0" max="10"><br><br>
+               <input type="file"><br><br>
+           </fieldset>
+           <fieldset>
+               <legend>Списочок</legend>
+               <select name="something" size="1">
+                <option>--Оберіть один варіант--</option>
+                <option value="one">Щось1</option>
+                <option value="two">Щось2</option>
+                <option value="three">Щось3</option>
+                <option value="four">Щось4</option>
+                <option value="five">Щось5</option>
+                <option value="six">Щось6</option>
+            </select><br><br>
+                <select name="something[]" multiple size="3">
+                <option disabled>--Оберіть декілька варіантів--</option>
+                <option value="one">Щось1</option>
+                <option value="two">Щось2</option>
+                <option value="three">Щось3</option>
+                <option value="four">Щось4</option>
+                <option value="five">Щось5</option>
+                <option value="six">Щось6</option>
+            </select><br><br>
+                <textarea rows="10" cols="25" maxlength="50" placeholder="Тут можна писати тільки 50 символів"></textarea>
+           </fieldset>
+       </form>
+</body>
+</html>
