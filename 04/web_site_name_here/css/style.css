@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*общая тема*/
+}
+body {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    color: #156609;
+    text-decoration: none;
+    /*убрала подчеркивание и изменила цвет текста для ссылки*/
+}
+/*общая настройка для контейнера*/
+.container {
+    width: 53%;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+/*тут все для хедера*/
+.header_t {
+    background-color: #222;
+}
+.kartinka {
+    background: url('../images/banner.jpg') bottom right no-repeat;
+    height: 100px; /*с картинкой надо разобраться, как ее подогнать именно так, как на макете*/
+}
+.sitename {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: lowercase;
+    padding-top: 34px;
+    padding-left: 7px;
+}
+.poloska {
+    background: -moz-linear-gradient(90deg, #8ca90c 0%, #b1db11 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b1db11), color-stop(100%, #8ca90c)); /* safari4+,chrome */
+    background: -webkit-linear-gradient(90deg, #8ca90c 0%, #b1db11 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(90deg, #8ca90c 0%, #b1db11 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(90deg, #8ca90c 0%, #b1db11 100%); /* ie10+ */
+    background: linear-gradient(0deg, #8ca90c 0%, #b1db11 100%); /* w3c */
+}
+#main_menu {
+    border-left: 2px solid #a0cc0e;
+    border-right: 2px solid #a0cc0e;
+}
+#main_menu li {
+    display: inline-block;
+    border-right: 2px solid #a0cc0e;    
+    
+}
+#main_menu li a {
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 12px;
+    font-size: 12px;
+}
+#main_menu li a:hover {
+    background-color: #415305; /*вроде как в самом тексте написано, что надо поменять при наведении цвет ячейки*/
+}
+/* main content*/
+main {
+    background-color: #eee;   
+}
+main .container {
+    padding-top: 19px;
+    padding-left: 10px;
+    background-color: #fff;
+    border-right: rgb(150, 150, 150) solid 0.5px;
+    border-left: rgb(150, 150, 150) solid 0.5px;
+}
+.subname {
+    font-size: 12px;
+    font-weight: bolder;
+    padding-bottom: 15px;
+}
+h2 {
+    font-size: 18px;
+    color: #575858;
+    border-bottom: #a0cc0e solid 1px;
+}
+.changes, .design_notes, .header_one{
+    padding-top: 15px;
+    padding-left: 12px;
+    font-size: 13px;
+}
+article ul {
+    list-style-type: disc;
+    padding-left: 25px;
+}
+.changes p {
+    padding-top: 21px;
+    padding-bottom: 14px;
+}
+.design_notes p {
+    padding-top: 18px;
+    padding-bottom: 14px;
+}
+.header_one p {
+    padding-bottom: 21px; /*тут хз, это, наверное неверно, но пока что не разобралась, как сделать попроще*/
+}
+footer {
+    background-color: #eee;
+}
+.footer_note{
+    background: -moz-linear-gradient(90deg, #8ca90c 0%, #b1db11 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b1db11), color-stop(100%, #8ca90c)); /* safari4+,chrome */
+    background: -webkit-linear-gradient(90deg, #8ca90c 0%, #b1db11 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(90deg, #8ca90c 0%, #b1db11 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(90deg, #8ca90c 0%, #b1db11 100%); /* ie10+ */
+    background: linear-gradient(0deg, #8ca90c 0%, #b1db11 100%); /* w3c */
+}
+.original {
+    float: right;
+    color: #fff;
+    font-size: 10px;
+    padding: 0 12px;
+    display: inline-block;
+    height: 19px;
+    line-height: 19px;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+/*шрифт для всего макета немного не совпадает и что-то не так с отступами, понять почему так, задать вопрос*/
