@@ -1,0 +1,89 @@
+@font-face {
+	font-family: 'proximanova';
+	src: url('../fonts/proximanova-light.eot');
+	src: local('☺'), url('../fonts/proximanova-light.woff') format('woff'), url('../fonts/proximanova-light.ttf') format('truetype'), url('../fonts/proximanova-light.svg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'proximanova';
+	src: url('../fonts/proximanova-regular.eot');
+	src: local('☺'), url('../fonts/proximanova-regular.woff') format('woff'), url('../fonts/proximanova-regular.ttf') format('truetype'), url('../fonts/proximanova-regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+    /*Подключила шрифт с помощью ютуба)))) */
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul, ol {
+    list-style: none;
+}
+body {
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'proximanova';
+    /*значения размера шрифта и высоты строки взяты с фотошопа */
+}
+.container {
+    max-width: 940px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 90px;
+}
+#items li {
+    display: inline-block;
+    width: 33.3333%;
+    text-align: center;
+    margin:  0 -2px; /*чтобы не убегал последний столбик*/
+}
+.icon_wrap {
+    padding-bottom: 20px;
+}
+.icon {
+    display: inline-block;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: 1px solid #1275b9;
+    background-color: #1275b9;
+    background-image: url('../images/sprite.png');
+    background-repeat: no-repeat;
+}
+/*спрайт --очень понравилась штука, получилось с первого раза, хочу еще где-то поюзать--*/
+.icon:hover {
+    background-color: #fff;
+}
+.icon_tablet {
+    background-position: 18px 15px;
+}
+.icon_tablet:hover {
+    background-position: 18px -65px;
+}
+.icon_shes {
+    background-position: -74px 15px;
+}
+.icon_shes:hover {
+    background-position: -74px -65px;
+}
+.icon_speed {
+    background-position: -170px 15px;
+}
+.icon_speed:hover {
+    background-position: -170px -65px;
+}
+#items li h3 {
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+#items li p {
+    color: #9d9d9d;
+    font-weight: 300;
+    padding-left: 50px;
+    padding-right: 50px; /*чтобы растянуть колонку на нужную ширину*/
+}
