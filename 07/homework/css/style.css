@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    background-color: #fff;
+}
+ul, ol {
+    list-style: none;
+}
+.container {
+    max-width: 940px;
+    width: 75%;
+    margin: 0 auto;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center; 
+    font-weight: 600;
+}
+p {
+    font-family: 'PT Sans', sans-serif;
+}
+.first_h {
+    font-size: 12px;
+    font-weight: 700;
+    color: #898f99;
+    margin-top: 80px;
+    margin-bottom: 14px;
+    letter-spacing: 2px;
+}
+.second_h {
+    font-size: 40px;
+    color: #0ec8cb;
+    margin-bottom: 19px;
+    letter-spacing: 5px;
+}
+.header_p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #999999;
+    text-transform: uppercase;
+    max-width: 450px;
+    margin: 0 auto 100px;
+    letter-spacing: 1.5px;
+}
+.content {
+    display: inline-block;
+    width: 25%;
+    margin-left: -4px;
+    background-color: #f7f7f7;
+    border: 1px solid #ececec;
+    text-align: center;
+    padding: 0 30px 54px;
+}
+.icon_wrap{
+    padding: 54px 0 34px;
+}
+.icon {
+    display: inline-block;
+    width: 68px;
+    height: 68px;
+    background-image: url('../images/sprite.png');
+    background-repeat: no-repeat;
+}
+.tablefix {
+    display: table;
+    width: 100%;
+}
+.content_head {
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #1b1b1b; 
+}
+.content_p {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #777777;
+    letter-spacing: 0.5px;
+    /*не получилось зделать перенос по буквам, чтобы было как в макете*/
+}
+.content:hover {
+    background-color: #0ec8cb;
+    color: #fff;
+}
+.content:hover .content_head {
+    color: #fff;
+}
+.content:hover .content_p {
+    color: #fff;
+}
+.icon_archon {
+    background-position: 0px 0px;
+}
+.content:hover .icon_archon {
+    background-position: 0px -118px;
+}
+.icon_diamond {
+    background-position: -125px 0px;
+}
+.content:hover .icon_diamond {
+    background-position: -125px -118px;
+}
+.icon_glasses {
+    background-position: -255px 0px;
+}
+.content:hover .icon_glasses {
+    background-position: -255px -118px;
+}
+.icon_monitor {
+    background-position: -380px 0px;
+}
+.content:hover .icon_monitor{
+    background-position: -380px -118px;
+}
+.otstup {
+    margin-bottom: 80px;
+}
