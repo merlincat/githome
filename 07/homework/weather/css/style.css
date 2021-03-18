@@ -1,0 +1,105 @@
+@font-face {
+	font-family: 'Lucida Sans Unicode';
+	src: url('fonts/6623.eot');
+	src: local('☺'), url('fonts/6623.woff') format('woff'), url('fonts/6623.ttf') format('truetype'), url('fonts/6623.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Lucida Grande';
+	src: url('fonts/8291.eot');
+	src: local('☺'), url('fonts/8291.woff') format('woff'), url('fonts/8291.ttf') format('truetype'), url('fonts/8291.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol {
+    list-style: none;
+}
+.border_b {
+    background-color: #3399cc;
+    border: 14px solid #2b81ac;
+}
+header {
+    margin: 17px 0 20px;
+}
+.town_list {
+    font-size: 0;
+    /*для того, чтобы ли не скакали на новый ряд*/
+    margin-bottom: 20px;
+    border: 3px solid #fff;
+    background-color: #fff;
+}
+.container {
+    max-width: 985px;
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Lucida Sans Unicode';
+}
+.town {
+    font-size: 20px;
+    border: inherit;
+    display: inline-block;
+    text-align: center;
+    padding: 32px 0;
+}
+.degrees {
+    opacity: .6;
+    margin-top: 15px;
+    font-family: 'Lucida Grande';
+
+}
+.lisbon, .san_fr {
+    width: 50%;
+}
+.paris, .belgrade, .moscow, .tel_aviv, .cair, .new_york, .new_delhi, .tokyo {
+    width: 25%;
+}
+/*цвета для фонов ли*/
+.sydney {
+    width: 100%;
+    background-color: #666699;
+}
+.lisbon {
+    background-color: #3399cc;
+}
+.paris {
+    background-color: #33cccc;
+}
+.belgrade {
+    background-color: #996699;
+}
+.moscow {
+    background-color: #c24747;
+}
+.tel_aviv {
+    background-color: #e2674a;
+}
+.cair {
+    background-color: #ffcc66;
+}
+.new_york {
+    background-color: #99cc99;
+}
+.new_delhi {
+    background-color: #669999;
+}
+.san_fr {
+    background-color: #cc6699;
+}
+.tokyo {
+    background-color: #339966;
+}
+/*магия --- для выделения одной ли при наведении --- */
+.town_list:hover .town:not(:hover){
+    opacity: .6;
+    transition: .3s all;
+}
+footer {
+    margin-bottom: 80px;
+}
