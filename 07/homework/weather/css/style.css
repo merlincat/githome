@@ -25,33 +25,38 @@ ul, ol {
     border: 14px solid #2b81ac;
 }
 header {
-    margin: 17px 0 20px;
+    margin: 25px 0 25px;
+}
+header h1 {
+    font-family: 'Lucida Sans Unicode';
+    font-size: 30px;
 }
 .town_list {
     font-size: 0;
     /*для того, чтобы ли не скакали на новый ряд*/
-    margin-bottom: 20px;
+    margin-bottom: 27px;
     border: 3px solid #fff;
     background-color: #fff;
 }
 .container {
-    max-width: 985px;
+    max-width: 983px;
     width: 90%;
     margin: 0 auto;
     color: #fff;
     font-family: 'Lucida Sans Unicode';
 }
 .town {
-    font-size: 20px;
+    font-size: 25px;
     border: inherit;
     display: inline-block;
     text-align: center;
-    padding: 32px 0;
+    padding: 28px 0 34px;
 }
 .degrees {
     opacity: .6;
-    margin-top: 15px;
+    margin-top: 10px;
     font-family: 'Lucida Grande';
+    font-size: 28px;
 
 }
 .lisbon, .san_fr {
@@ -101,5 +106,12 @@ header {
     transition: .3s all;
 }
 footer {
-    margin-bottom: 80px;
+    /* padding-top: 7px; */
+    margin-bottom: 20px;
+    font-family: 'Lucida Grande';
+    font-size: 22px;
+    letter-spacing: .17px;
+}
+i {
+    font-size: 35px;
 }
