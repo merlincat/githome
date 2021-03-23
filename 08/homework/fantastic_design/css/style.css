@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'HansKendrick';
+    src: url('../fonts/HansKendrick-Regular.woff2') format('woff2'),
+         url('../fonts/HansKendrick-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+/*для даты*/
+}
+ul, ol {
+    list-style: none;
+}
+body {
+    background-color: #e2e7ec;
+}
+h2 {
+    font-family: 'HansKendrick', sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+    color: #1d1d1d;
+    text-transform: uppercase;
+    font-weight: 700;
+    /*но жирного начертания я не нашла=( */
+}
+.title1 {
+    font-family: 'HansKendrick', sans-serif;
+    font-size: 13px;
+    color: #818181;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.wcolor {
+    font-size: 30px;
+    line-height: 36px;
+    color: #fff;
+}
+.container {
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 91px;
+    flex-wrap: wrap;
+    margin-bottom: 79px;
+}
+.content li {
+    margin-bottom: 20px;
+    background-color: #fff;
+    height: 540px;
+    /*не хотелось бы задавать высоту этого контейнера, надо было бы заполнить как-то контентом.
+    мб надо было создать флекс-контейнер внутри и поиграться с расположением заголовков и маленькой картинки?*/
+}
+.first_block {
+    width: calc(66.6667% - 6px);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 100%), linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 100%),url(../images/car.jpg);
+    /* background-color: #fff; */
+    padding: 400px 0 36px 44px;
+}
+.content_bloka {
+    /* background-color: #fff; */
+    padding-left: 28px;
+    /* padding-bottom: 25px; */
+    padding-top: 22px;
+    position: relative;
+}
+.content_bloka::after {
+    content: '';
+    display: block;
+    /* width: 100%; */
+    /* height: 148px; */
+    height: 54px;
+    width: 54px;
+    border-radius: 50%;
+    background-image: url(../images/paren.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 207px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'HansKendrick', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #99a5b0;
+    margin-bottom: 100px;
+} 
+footer img {
+    width: 50px;
+    height: 50px;
+}

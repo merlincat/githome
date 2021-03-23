@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Miso';
+    src: url('../fonts/miso-bold-webfont.woff2') format('woff2'),
+         url('../fonts/miso-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+/*для цены на карточке*/
+}
+@font-face {
+    font-family: 'Miso';
+    src: url('../fonts/miso-light-webfont.woff2') format('woff2'),
+         url('../fonts/miso-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+/*для заголовка со цветом чашки*/
+}
+@font-face {
+    font-family: 'Miso';
+    src: url('../fonts/miso____-webfont.woff2') format('woff2'),
+         url('../fonts/miso____-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+    background-color: #fdde7e;
+}
+.container {
+    width: 90%;
+    max-width: 1139px;
+    margin: 0 auto;
+}
+.cup_list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.cup {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: calc(33.3333% - 22px);   
+    background-color: #fff;
+    padding: 36px 0 36px 0;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px -2px rgba(0, 0, 0, .8);
+    
+}
+.cup h2 {
+    font-family: 'Miso', sans-serif;
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 700;
+    color: #02995b;
+    margin-bottom: 12px;
+}
+.chashka {
+    display: block;
+    width: 145px;
+    height: 140px;
+    background-image: url('../images/sprite_cups.png');
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+.brchashka {
+  background-position: 10px 0px;  
+}
+.glchashka {
+    background-position: -152px 0px;  
+}
+.slchashka {
+    background-position: -314px 0px;  
+}
+
+
+.cup h3 {
+    font-family: 'Miso', sans-serif;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+    color: #333333;
+    margin-bottom: 20px;
+
+}
+.cup p {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: .2px;
+    color: #333333;
+}
+.max_cup {
+       height: 500px;
+       padding: 46px 0 52px 0;
+}
+.max_cup h2 {
+    margin-bottom: 34px;
+}
+.glchashka {
+    margin-bottom: 40px;
+}
+
+/* .max {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+
+}
+._cup {
+ padding-top: 52px;
+    padding-bottom: calc(52px - 36px);
+    height: 500px; 
+transform: scale(1, 1.2); 
+flex-grow: 1; 
+} */
