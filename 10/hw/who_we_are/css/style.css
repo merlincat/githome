@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'bazarmedium';
+    src: url('../fonts/bazar_500-webfont.woff2') format('woff2'),
+         url('../fonts/bazar_500-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-color: #f6f6f6;
+    font-family: 'Lato', sans-serif;
+}
+ul, ol {
+    list-style: none;
+}
+.container {
+    max-width: 1170px;
+    width: 90%;
+    margin: 0 auto;
+}
+.header {
+    text-align: center;
+    margin-bottom: 55px;
+    margin-top: 100px;
+}
+.header__title {
+    font-family: 'Lato', sans-serif;
+    font-size: 34px;
+    line-height: 34px;
+    letter-spacing: 5px;
+    font-weight: 700;
+    color: #3c3c3c;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+    position: relative;
+}
+.header__title::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 45px;
+    border-bottom: 4px solid #dddbdb;
+}
+.header__content {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #3c3c3c;
+    width: 50%;
+}
+/*тут картинка и ее характеристики и флип*/
+.item_wrap {
+    background-color: #fff;
+}
+.cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /*почему в данном случае не работает врап?
+    на новую строку лишка не переносится при уменьшении экрана*/
+}
+.item {
+    width: calc(25.6% - 30px);
+}
+
+/* entire container, keeps perspective- я так поняла, это для размаха оборота карточки? */
+.fl-container {
+	perspective: 1000px;
+    margin-bottom: 22px;
+}
+	/* переворот при наведении*/
+	.fl-container:hover .flipper, .fl-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.fl-container, .front, .back {
+	width: 270px;
+	height: 268px;
+}
+
+/* для скорости переворота */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* прячем сторону при неактивности */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+    cursor: pointer;
+}
+
+/* прячем сторону за стороной */
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+/* задаем разворот для бэка и его стили */
+.back {
+	transform: rotateY(180deg);
+    background-color: #18b5dc;
+}
+/*стили для самой карточки ззади*/
+.icons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons__pic-link {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background-color: #5ecbe7;
+    color: #fff;
+    font-size: 25px;
+    line-height: 42px;
+    text-align:center;
+    margin: 0 2.5px;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+.icons__pic-link:hover {
+    background-color: #fff;
+    color: #18b5dc;
+}
+.item__title {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    color: #282528;
+    margin-bottom: 5px;
+}
+.item__title--bold {
+    font-weight: 700;
+}
+.item__subtitle {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    color: #646464;
+}
+.item__subtitle--light {
+    font-weight: 300;
+}
