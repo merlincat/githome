@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Museo';
+    src: url('../fonts/museosansrounded-100-webfont.woff2') format('woff2'),
+         url('../fonts/museosansrounded-100-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-family: 'Museo', sans-serif;
+    background: url(../images/fon.jpg) no-repeat;
+    background-size: 100%;
+}
+.product__wrap {
+    margin: auto;
+    width: 686px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product {
+    width: 686px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #111a28;
+    border-radius: 9px;
+    box-shadow: 0 0 65px rgba(0,0,0,.82);
+    padding: 74px 56px 19px 36px;
+}
+.gallery {
+    width: calc(70% - 80px);
+}
+.gallery_main {
+    margin-bottom: 74px;
+}
+.gallery__preview {
+    width: 100%;
+    list-style: none;
+    text-align: center;
+   
+}
+.gallery__item {
+    display: inline-block; 
+    border-radius: 50%;
+    background-color: #fff;
+    width: 9px;
+    height: 9px;
+    border: 2px solid transparent;  
+    transition: all .5s ease;
+    margin-right: 8px;
+}
+.gallery__item--hover:hover {
+    transform: scale(2);
+    border: 2px solid #7b8088;
+}
+.gallery__item--gray {
+    background-color: #1f273f; 
+}
+.gallery__item--white {
+    background-color: #fff;
+}
+.gallery__item--red {
+    background-color: #ed3333;
+}
+.gallery__item--blue {
+    background-color: #29e3ea;
+}
+.gallery__item:active {
+    transform: scale(2);
+    border: 2px solid #546889;
+}
