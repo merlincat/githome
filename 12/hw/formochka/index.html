@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12Practice</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/plugins/styler/jquery.formstyler.css">
+    <link rel="stylesheet" href="assets/plugins/styler/jquery.formstyler.theme.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sign-in">
+            <div class="sign-in__header header">
+                    <div class="header__title">Sign in</div>
+                    <div class="header__title header__title--transparent">Join us</div>
+            </div>
+            <div class="sign-in__box">
+                <form class="sign-in__form form" action="#" method="POST">
+                    <div class="form__fields">
+                        <div class="form__field">
+                            <label for="username" class="form__field-title">Username</label>
+                            <div class="form__control">
+                                <input type="text" name="username" id="username" required class="form__control-input">
+                            </div>
+                        </div>
+                        <div class="form__field">
+                            <label for="password" class="form__field-title">Password</label>
+                            <div class="form__control">
+                                <input type="password" name="card_number" id="password" required class="form__control-input">
+                            </div>
+                        </div>
+                        <div class="form__field form__field--last">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Keep me signed in
+                                </label>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="form__actions">
+                        <div class="form__action-button">
+                            <button class="btn btn-green" type="submit">Sign in</button>
+                        </div>
+                        <div class="flex">
+                        <div class="form__action-button mb-0">
+                            <button class="btn-link" type="reset">Forgot password</button>
+                        </div>
+                        <div class="form__action-button mb-0">
+                            <button class="btn-link" type="reset">Create an account</button>
+                        </div>
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/maskedinput.js"></script>
+    <script src="assets/plugins/styler/jquery.formstyler.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
