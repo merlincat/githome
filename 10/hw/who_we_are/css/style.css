@@ -71,8 +71,6 @@ ul, ol {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /*почему в данном случае не работает врап?
-    на новую строку лишка не переносится при уменьшении экрана*/
 }
 .item {
     width: calc(25.6% - 30px);
