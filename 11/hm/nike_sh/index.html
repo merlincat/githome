@@ -6,29 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>esche odin krosovok</title>
+    <link rel="stylesheet" href="assets/plugins/styler/jquery.formstyler.css">
+    <link rel="stylesheet" href="assets/plugins/styler/jquery.formstyler.theme.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="product__wrap">
+    <div class="wrapper">
     <div class="product__box">
-        <div class="product__logo">
-            <a class="product__logo-link" href="#">
-                <img class="product__logo-pic" src="images/logotip.png" alt="nike">
-            </a>
-        </div>
         <div class="product">
-        <div class="product_gallery gallery">
-        <div class="gallery_main">
-            <img class="gallery__main-img" src="images/Nike-SB.png" alt="krosovok">
-        </div>
-        <ul class="gallery__preview">
-            <li class="gallery__item gallery__item--hover gallery__item--gray"><a href="#" class="gallery__link gellery__link--active"></a></li>
-            <li class="gallery__item gallery__item--hover gallery__item--white"><a href="#" class="gallery__link"></a></li>
-            <li class="gallery__item gallery__item--hover gallery__item--red"><a href="#" class="gallery__link"></a></li>
-            <li class="gallery__item gallery__item--hover gallery__item--blue"><a href="#" class="gallery__link"></a></li>
-        </ul>
+            <div class="product__logo">
+                <a class="product__logo-link" href="#">
+                    <img class="product__logo-pic" src="images/logotip.png" alt="nike">
+                </a>
+            </div>
+            <div class="product_gallery gallery">
+            <div class="gallery_main">
+                <img class="gallery__main-img" src="images/Nike-SB.png" alt="krosovok">
+            </div>
+                <ul class="gallery__preview">
+                    <li class="gallery__item gallery__item--hover gallery__item--gray"><a href="#" class="gallery__link gellery__link--active"></a></li>
+                    <li class="gallery__item gallery__item--hover gallery__item--white"><a href="#" class="gallery__link"></a></li>
+                    <li class="gallery__item gallery__item--hover gallery__item--red"><a href="#" class="gallery__link"></a></li>
+                    <li class="gallery__item gallery__item--hover gallery__item--blue gallery__item--last"><a href="#" class="gallery__link"></a></li>
+                </ul>
+            </div>
+        <div class="product__char char">
+            <div class="char__title">Nike SB Stefan Janoski Max</div>
+            <div class="char__subtitle">Unisex Skateboarding Shoe</div>
+            <div class="char__rate rate rate--left"><!--
+                --><a href="#5" title="Give 5 stars">★</a><!--
+                --><a href="#4" title="Give 4 stars">★</a><!--
+                --><a href="#3" title="Give 3 stars">★</a><!--
+                --><a href="#2" title="Give 2 stars">★</a><!--
+                --><a href="#1" title="Give 1 star">★</a>
+            </div>
+            <form class="char__form form">
+                <div class="form__inner">
+                    <div class="form__inner-select">
+                        <select name="size" id="size">
+                            <option>Size</option>
+                            <option>36</option>
+                            <option>37</option>
+                        </select>
+                        <select name="qty" id="qty">
+                            <option>Qty</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                    <button class="form__inner-button button" type="submit">Add to cart</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/maskedinput.js"></script>
+<script src="assets/plugins/styler/jquery.formstyler.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
