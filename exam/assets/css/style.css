@@ -40,7 +40,7 @@ main {
   font-weight: 400;
   line-height: 22px;
   text-align: center;
-  letter-spacing: 6px;
+  letter-spacing: 5.5px;
 }
 
 #home {
@@ -56,10 +56,10 @@ main {
   margin: 0 auto;
 }
 #home .main_wrap .maintitle {
-  margin-bottom: 15px;
+  margin-bottom: 7px;
 }
 #home .main_wrap .subtitle {
-  margin-bottom: 54px;
+  margin-bottom: 48px;
 }
 #home .main_wrap .scroll {
   width: 94px;
@@ -74,27 +74,27 @@ main {
 #home .main_wrap .scroll:after {
   content: "";
   display: block;
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   background: transparent;
   border-right: 2px solid #fff;
   border-bottom: 2px solid #fff;
   position: absolute;
-  left: 40%;
-  bottom: -20px;
+  left: 44%;
+  bottom: -19px;
   transform: rotate(45deg);
 }
 
 .form {
   width: 100%;
-  margin-bottom: 120px;
+  margin-bottom: 141px;
   position: relative;
 }
 .form input {
   width: 100%;
   color: #999999;
-  letter-spacing: normal;
-  word-spacing: normal;
+  letter-spacing: 2px;
+  word-spacing: 0;
   text-shadow: none;
   text-align: center;
   background-color: #fff;
@@ -105,6 +105,9 @@ main {
   border-color: none;
   border-image: none;
   outline: none;
+}
+.form input::placeholder {
+  margin-left: 150px;
 }
 .form input:active {
   box-shadow: 0 2px 5px 2px rgba(84, 116, 253, 0.5);
@@ -121,19 +124,28 @@ main {
   text-decoration: none;
   font-family: "Aleo", serif;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
   color: #fff;
   font-weight: 400;
   text-transform: uppercase;
   border: none;
   background-color: #5474fd;
-  padding: 22px 50px 22px 20px;
+  padding: 14px 16px 16px 37px;
   cursor: pointer;
   transition: all 0.6s ease;
 }
 .form .btn:hover {
   background-color: #3458f8;
   color: #efefef;
+}
+.form .btn .minisearch {
+  position: relative;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  margin-left: 15px;
 }
 
 .header {
@@ -154,8 +166,9 @@ main {
 .header .nav_wrap .logo {
   font-size: 24px;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .nav_list {
@@ -174,7 +187,7 @@ main {
   border-bottom: 3px solid transparent;
   cursor: pointer;
   transition: all 0.8s ease;
-  margin-left: 42px;
+  margin-left: 43px;
 }
 .nav_list .list_item-link:hover {
   border-bottom: 3px solid #fff;
@@ -196,7 +209,7 @@ main {
   background-image: url(../images/fon_2.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 120px 0;
+  padding: 120px 0 118px;
 }
 #who .container {
   width: 90%;
@@ -205,13 +218,13 @@ main {
   flex-wrap: wrap;
 }
 #who .container .content_wrap {
-  padding: 84px 0 10px;
+  padding: 82px 0 10px;
 }
 #who .container .content_wrap .content_h {
-  margin-bottom: 55px;
+  margin-bottom: 57px;
 }
 #who .container .content_wrap .content_par {
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 #who .container .image_wrap {
   width: calc(50% - 15px);
@@ -220,7 +233,24 @@ main {
   align-items: flex-end;
 }
 #who .container .image_wrap .image_top {
-  margin: 0 125px 5px;
+  margin: 0 125px 4px;
+}
+
+.wrapper {
+  position: relative;
+}
+.wrapper::before {
+  content: "";
+  padding-top: 100%;
+  width: 100%;
+}
+.wrapper img.lazy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .content_h {
@@ -242,6 +272,7 @@ main {
   text-decoration: none;
   font-family: "Aleo", serif;
   font-size: 16px;
+  letter-spacing: 1.1px;
   line-height: 16px;
   color: #fff;
   font-weight: 400;
@@ -272,13 +303,12 @@ main {
 
 #search {
   background-color: #333333;
-  padding: 44px 0 120px;
+  padding: 98px 0 112px;
 }
 #search .search_content {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  width: 100%;
   position: relative;
 }
 #search .search_content::after {
@@ -291,27 +321,38 @@ main {
   background-position: center top;
   background-size: contain;
   position: absolute;
-  left: 11%;
-  top: -15%;
+  left: 12%;
+  top: -40%;
 }
 #search .search_content svg {
   width: 62px;
-  height: auto;
+  height: 62px;
   position: relative;
   overflow: hidden;
   background-color: #333333;
+  cursor: pointer;
+  margin-bottom: 24px;
 }
 #search .search_content .maxsearch {
   fill: #5474fc;
 }
+#search .search_content .maxsearch:hover {
+  fill: #2e54fa;
+}
 #search .search_content .bird {
   fill: #ff6363;
+}
+#search .search_content .bird:hover {
+  fill: #fa3c3c;
 }
 #search .search_content .finger {
   fill: #1b6691;
 }
-#search .search_content .search_content-text {
-  width: calc(33.3333% - 70px);
+#search .search_content .finger:hover {
+  fill: #30a1e2;
+}
+#search .search_content .search_content-item {
+  width: calc(33.3333% - 15px);
   text-align: center;
   z-index: 2;
 }
@@ -322,13 +363,13 @@ main {
 .circle::after {
   content: "";
   display: inline-block;
-  width: 90px;
-  height: 90px;
+  width: 105px;
+  height: 105px;
   background-color: #333333;
   border-radius: 50%;
   position: absolute;
-  left: -13px;
-  top: -110px;
+  left: -24px;
+  top: -90px;
   z-index: -1;
 }
 
@@ -337,30 +378,30 @@ main {
   background-image: url(../images/fon_3.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 230px 0 100px;
+  padding: 230px 0 98px;
 }
 #what .container, #travel .container {
   display: flex;
   justify-content: flex-start;
 }
 #what .container .content_wrap, #travel .container .content_wrap {
-  padding: 50px 30px;
+  padding: 50px 30px 46px;
   background-color: rgba(51, 51, 51, 0.9);
-  width: 50%;
+  width: calc(50% - 15px);
 }
 #what .container .content_wrap .section_ttl, #travel .container .content_wrap .section_ttl {
   opacity: 0.9;
   margin-bottom: 30px;
 }
 #what .container .content_wrap .section_ttl-up, #travel .container .content_wrap .section_ttl-up {
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 }
 #what .container .content_wrap .content_par, #travel .container .content_wrap .content_par {
-  letter-spacing: 0;
-  margin-bottom: 45px;
+  letter-spacing: 0.1px;
+  margin-bottom: 43px;
 }
 #what .container .content_wrap a, #travel .container .content_wrap a {
-  padding: 22px 60px;
+  padding: 22px 62px;
 }
 
 .section_ttl {
@@ -391,7 +432,7 @@ main {
   background-image: url(../images/fon_5.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 120px 0 200px;
+  padding: 118px 0 200px;
 }
 #review .content_h {
   text-align: center;
@@ -407,7 +448,7 @@ main {
 }
 #review .review_wrap .content_wrap {
   width: 60%;
-  padding: 40px 40px 40px 58px;
+  padding: 51px 40px 40px 60px;
   background-color: #333;
   opacity: 0.9;
 }
@@ -442,12 +483,12 @@ main {
 .footer .footer_wrap .maintitle {
   font-size: 24px;
   line-height: 24px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 .footer .footer_wrap .subtitle {
   font-size: 16px;
   line-height: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   letter-spacing: 0.5px;
   text-align: center;
 }
