@@ -262,7 +262,7 @@ main {
   width: 50%;
   height: 100%;
   background-color: #496bfe;
-  transition: all 2s ease;
+  transition: all 1.2s ease;
   transform: skew(45deg);
   z-index: -1;
 }
@@ -273,6 +273,63 @@ main {
 #search {
   background-color: #333333;
   padding: 44px 0 120px;
+}
+#search .search_content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+#search .search_content::after {
+  content: "";
+  display: inline-block;
+  width: 75%;
+  height: 100%;
+  background-image: url(../images/dots.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  position: absolute;
+  left: 11%;
+  top: -15%;
+}
+#search .search_content svg {
+  width: 62px;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background-color: #333333;
+}
+#search .search_content .maxsearch {
+  fill: #5474fc;
+}
+#search .search_content .bird {
+  fill: #ff6363;
+}
+#search .search_content .finger {
+  fill: #1b6691;
+}
+#search .search_content .search_content-text {
+  width: calc(33.3333% - 70px);
+  text-align: center;
+  z-index: 2;
+}
+
+.circle {
+  position: relative;
+}
+.circle::after {
+  content: "";
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background-color: #333333;
+  border-radius: 50%;
+  position: absolute;
+  left: -13px;
+  top: -110px;
+  z-index: -1;
 }
 
 #what, #travel {

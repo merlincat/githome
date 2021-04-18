@@ -6,14 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exam</title>
     <!-- плагины -->
-    <!-- <link rel="stylesheet" href="assets/plugins/jquery.formstyler.css">
-    <link rel="stylesheet" href="assets/plugins/jquery.formstyler.theme.css"> -->
     <!-- для моб меню -->
     <link rel="stylesheet" href="assets/css/hamburgers.min.css">
 
     <!-- шрифты и другие линки -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.min.css">
 
 </head>
@@ -88,13 +86,27 @@
         </div>
     </section>
     <div class="section" id="search">
-        <div class="container">
-            <div class="search_content">
+        <div class="container">            
+            <ul class="search_content">
                 <!-- спрайт - потом див с пнг точками  -- повторить -->
-                <div class="search_content-text">Search Places</div>
-                <div class="search_content-text">Select Places</div>
-                <div class="search_content-text">Book & Enjoy</div>
-            </div>
+                <li class="search_content-text">
+                        <span class="circle"></span>
+                        <svg class="maxsearch">
+                            <use xlink:href="assets/svg/sprite.svg#maxsearch" ></use>
+                        </svg>
+                    <p class="li_par">Search Places</p></li>
+                <li class="search_content-text">
+                    <span class="circle"></span>
+                    <svg class="bird">
+                    <use xlink:href="assets/svg/sprite.svg#bird" ></use>
+                </svg>
+                <p class="li_par">Select Places</p></li>
+                <li class="search_content-text">
+                    <span class="circle"></span><svg class="finger">
+                    <use xlink:href="assets/svg/sprite.svg#finger" ></use>
+                </svg>
+                <p class="li_par">Book & Enjoy</p></li>
+            </ul>
         </div>
     </div>
 
@@ -165,8 +177,7 @@
     <!-- js -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <!-- <script src="assets/js/maskedinput.js"></script>
-    <script src="assets/plugins/jquery.formstyler.js"></script> -->
-    <!-- <script src="assets/js/intersection-observer.js"></script>
+    <script src="assets/js/intersection-observer.js"></script>
     <script src="assets/js/lazyload.js"></script> -->
     <script src="assets/js/main.js"></script>
 </body>
