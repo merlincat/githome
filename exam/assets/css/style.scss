@@ -12,15 +12,7 @@ body {
     width: 90%;
     max-width: 1110px;
 }
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-}
-.sb {
-    justify-content: space-between;
-}
 main {
-    height: 100%;
     width: 100%;
 }
 .maintitle {
@@ -40,12 +32,30 @@ main {
     letter-spacing: 5.5px;
 
 }
+.content_h {
+    font-family: 'Aleo', serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+}
+.content_par {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.section_ttl {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
+}
+.section_ttl-up{
+    text-transform: uppercase;
+}
 #home {
-    // заделать одним селектором
-    background-color: #5fa9cd;
-    background-image: url(../images/fon_1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
+    background: #5fa9cd url(../images/fon_1.png) /cover no-repeat;
     padding: 266px 0 134px;
     .main_wrap {
         max-width: 650px;
@@ -199,14 +209,13 @@ main {
 .hamburger {
     display: none;
 }
+
 .content_wrap {
     width: calc(50% - 15px);
 }
 #who{
-    background-color: #3f3938;
-    background-image: url(../images/fon_2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: #3f3938 url(../images/fon_2.png) /cover no-repeat;
+    width: 100%;
     padding: 120px 0 118px;
     .container{
         width: 90%;
@@ -236,33 +245,23 @@ main {
 // для резиновых картинок
 .wrapper {
     position: relative; 
-    // width: 100%;
+    width: 353px;
     &::before{
         content: '';
-        padding-top: 100%;
+        padding-top: 62%;
+        display: block;
         width: 100%;
     }
-    img.lazy { 
+    img { 
         position: absolute; 
         top: 0; 
         left: 0; 
         width: 100%;
         height: 100%;
         object-fit: cover;
+        
     }
-}
 
-.content_h {
-    font-family: 'Aleo', serif;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 36px;
-}
-.content_par {
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 300;
-    letter-spacing: 1px;
 }
 // зделать, чтобы текст не прятался
 
@@ -310,6 +309,7 @@ main {
     padding: 98px 0 112px;
     .search_content {
         display: flex;
+        flex-wrap: wrap;
         width: 100%;   
         justify-content: space-between;
         position: relative;
@@ -383,12 +383,12 @@ main {
 }
 
 // search
-#what, #travel {
-    background-color: #958caa;
-    background-image: url(../images/fon_3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+#what{
+    width: 100%;
+    background:#958caa url(../images/fon_3.png) /cover no-repeat;
     padding: 230px 0 98px;
+}
+#what, #travel {
     .container {
         display: flex;
         justify-content: flex-start;
@@ -411,35 +411,19 @@ main {
                 padding: 22px 62px;
             }
         }
-    
     }
-    
-}
-.section_ttl {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 20px;
-    color: #fff;
-}
-.section_ttl-up{
-    text-transform: uppercase;
 }
 #travel{
-    background-color: #ff9076;
-    background-image: url(../images/fon_4.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
+    background: #ff9076  url(../images/fon_4.png) /cover no-repeat;
     padding: 230px 0 100px;
     .container {
-        width: 90%;
         justify-content: flex-end;
     }
 }
 #review {
-    background-color: #292b2c;
-    background-image: url(../images/fon_5.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
+    background: #292b2c url(../images/fon_5.png) /cover no-repeat ;
     padding: 118px 0 200px;
     .content_h {
         text-align: center;
@@ -449,34 +433,40 @@ main {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        .img_wrap{
+        justify-content: space-between;
+        position: relative;
+        img{
             width: 40%;
         }
-        .content_wrap {
-            width: 60%;
-            padding: 51px 40px 40px 60px;
-            background-color: #333;
-            opacity: .9;
-            .section_ttl {
-                margin-bottom: 40px;
-            }
-            .content_par {
-                letter-spacing: .1px;
-                &:before {
-                    content: "“";
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 50px;
-                    position: relative;
-                    top: 5px;
-                    font-weight: 700;
-                    line-height: 0;
-                    display: inline-block;
-                    color:#5474fd;
-                }
+    
+    }
+    .content_wrap {
+        // задано для того, чтобы высота была такая же как и в картинки
+        height: 284px;
+        flex-grow: 2;
+        padding: 51px 40px 40px 60px;
+        background-color: #333;
+        opacity: .9;
+        .section_ttl {
+            margin-bottom: 40px;
+        }
+        .content_par {
+            letter-spacing: .1px;
+            &:before {
+                content: "“";
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 50px;
+                position: relative;
+                top: 5px;
+                font-weight: 700;
+                line-height: 0;
+                display: inline-block;
+                color:#5474fd;
             }
         }
     }
 }
+
 .footer {
     background-color: #232323;
     width: 100%;
@@ -513,4 +503,313 @@ main {
             }
         }
     }
+}
+//  адаптация
+// 
+// 
+// 
+
+@media screen and (max-width:1045px){
+    #review .content_wrap .content_par {
+        font-size: 14px;
+    }
+    #who .container{
+        .content_wrap {
+            padding: 42px 0 10px;
+        } 
+        .image_wrap {
+            .image_top {
+                margin: 0 0 34px;
+            }
+        }
+    }
+}
+@media screen and (max-width:988px){
+    #review {
+        padding: 118px 0 100px;
+        .content_h {
+            margin-bottom: 74px;
+        }
+        .review_wrap img{
+            width: 50%;
+        }
+        .content_wrap {
+            padding: 21px 10px 10px 20px;
+            .section_ttl {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width:900px){
+    #home{
+        background: #5fa9cd url(../images/fon_1@900.png) /cover no-repeat;
+    }
+    .nav_list {
+        .list_item-link {
+            margin-left: 20px;
+        }                 
+    }
+    .header {
+        .nav_wrap {
+            .logo {
+                font-size: 24px;
+                letter-spacing: .2px;
+            }
+        }
+    }
+    #who {
+        background: #3f3938 url(../images/fon_2@900.png) /cover no-repeat;
+    }
+    #what {
+        background:#958caa url(../images/fon_3@900.png) /cover no-repeat;
+    }
+    #travel {
+        background: #ff9076  url(../images/fon_4@900.png) /cover no-repeat;
+    }
+    #review {
+        background: #292b2c url(../images/fon_5@900.png) /cover no-repeat ;
+    }
+}
+@media screen and (max-width:780px){
+    #search{
+        background-color: #333333;
+        padding: 68px 0 62px;
+        .search_content .search_content-item .content_h{
+            font-size: 28px;
+            line-height: 28px;
+            
+        }
+    }
+    #what, #travel {
+        padding: 98px 0 98px;
+        .container .content_wrap {
+             width: 75%;
+        }
+    }
+}
+@media screen and (max-width:742px){
+    #review {
+        padding: 68px 0 68px;
+        .review_wrap{
+            justify-content: center;
+            img{
+                width: auto;
+            }
+        } 
+        .content_wrap {
+            width: 60%;
+            max-width: 445px;
+        }
+    }
+}
+@media screen and (max-width:724px){
+    #who{
+        padding: 50px 0 50px;
+        .container{
+            width: 90%;
+            .content_wrap {
+                width: 100%;
+                padding: 0 0 10px 0;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            .image_wrap {
+                width: 100%;
+                align-items: center;
+                .image_top {
+                    margin: 0 0 24px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:720px){
+    .hamburger {
+        display: block;
+    }
+    .nav{
+        display: none;
+    }
+}
+@media screen and (max-width:640px){
+    #home{
+        background: #5fa9cd url(../images/fon_1@640.png) /cover no-repeat;
+    }
+    .form {
+        input {
+            letter-spacing: 1px;
+            padding: 24px 10px 23px;
+            text-align: left;
+            &::placeholder {
+                margin-left: 0;
+            }
+        }
+        .btn {
+            .search_text{
+                display: none;
+            }
+            .minisearch {
+                right: 50%;
+                margin-left: 0;
+            }
+        }
+    }
+    #who {
+        background: #3f3938 url(../images/fon_2@640.png) /cover no-repeat;
+    }
+    #what {
+        background:#958caa url(../images/fon_3@640.png) /cover no-repeat;
+    }
+    #travel {
+        background: #ff9076  url(../images/fon_4@640.png) /cover no-repeat;
+    }
+    #review {
+        background: #292b2c url(../images/fon_5@640.png) /cover no-repeat ;
+    }
+    .footer {
+        padding: 50px 0 50px;
+    }
+}
+@media screen and (max-width:610px){
+    #search{
+        padding: 48px 0 42px;
+        .search_content {
+            &::after{
+                display: none;
+            }
+            .search_content-item{
+                width: 50%;
+                margin-bottom: 20px;
+                &:last-child{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #what, #travel {
+        padding: 68px 0 68px;
+        .container .content_wrap {
+             width: 100%;
+        }
+    }
+}
+@media screen and (max-width:500px){
+    #review {
+        padding: 68px 0 68px;
+        .review_wrap{
+            justify-content: center;
+            img{
+                width: 100%;
+            }
+        } 
+        .content_wrap {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+@media screen and (max-width:480px) {
+    #home{
+        background: #5fa9cd url(../images/fon_1@480.png) /cover no-repeat;
+    }
+    #who {
+        background: #3f3938 url(../images/fon_2@480.png) /cover no-repeat;
+    }
+    #what {
+        background:#958caa url(../images/fon_3@480.png) /cover no-repeat;
+    }
+    #travel {
+        background: #ff9076  url(../images/fon_4@480.png) /cover no-repeat;
+    }
+    #review {
+        background: #292b2c url(../images/fon_5@480.png) /cover no-repeat ;
+    }
+}
+@media screen and (max-width:410px){
+    #search .search_content .search_content-item{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+@media screen and (max-width:392px){
+    #review .content_h {
+        font-size: 28px;
+        line-height: 28px;
+        margin-bottom: 24px;
+    }
+}
+@media screen and (max-width:361px){
+    #home{
+        .maintitle {
+            font-size: 42px;
+            line-height: 42px;
+            letter-spacing: 2.5px;       
+        }
+        .subtitle {
+            font-size: 18px;
+            line-height: 18px;
+            letter-spacing: 4px;
+        }
+    }
+    .form {
+        input {
+            letter-spacing: .1px;
+            padding: 24px 5px 23px;
+        }
+    }
+    .wrapper {
+        width: 308px;
+    }
+}
+@media screen and (max-width:319px){
+    #home{
+        .maintitle {
+            font-size: 36px;
+            line-height: 36px;
+            letter-spacing: 1.5px;
+        }
+        .subtitle {
+            letter-spacing: 2px;
+        }
+    }
+    .form {
+        input {
+            padding: 24px 5px 23px;
+        }
+        .btn {
+            padding: 14px 5px 16px 17px;
+            .minisearch {
+                right: 30%;
+                margin-left: 0;
+            }
+        }
+    }
+    .wrapper {
+        width: 270px;
+    }
+    #what, #travel {
+        padding: 48px 0 48px;
+        .container .content_wrap {
+            text-align: center;
+            padding: 30px 15px 30px;
+            a{
+                padding: 22px 42px;
+            }
+        }
+    }
+    .section_ttl {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    #review {
+        .content_h {
+            font-size: 24px;
+            line-height: 24px;
+        }
+        .content_par{
+            line-height: 22px;
+        }
+    }      
 }

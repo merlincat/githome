@@ -14,7 +14,6 @@ $(function () {
   // })
   $(".hamburger").on('click', function () {
     $(".hamburger").toggleClass("is-active");
-    $("body").toggleClass("open");
   }); // $(".m_list_item-link").on('click',function(){
   //     $(".hamburger").removeClass("is-active");
   //     $("body").removeClass("open");
