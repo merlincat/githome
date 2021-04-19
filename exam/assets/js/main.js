@@ -1,11 +1,5 @@
 $(function(){
-    // $(window).on('scroll', function(){
-    //     if($(window).scrollTop()>70){
-    //         $("header").addClass("fixed");
-    //     }else{
-    //         $("header").removeClass("fixed");
-    //     }
-    // });
+
     // $(".hamburger, #nav_shadow").on('click', function(){
     //     $(".hamburger").toggleClass("is-active");
     //     $("body").toggleClass("open");
@@ -13,6 +7,7 @@ $(function(){
     $(".hamburger").on('click', function(){
         $(".hamburger").toggleClass("is-active");
     })
+    
     // $(".m_list_item-link").on('click',function(){
     //     $(".hamburger").removeClass("is-active");
     //     $("body").removeClass("open");

@@ -1,13 +1,6 @@
 "use strict";
 
 $(function () {
-  // $(window).on('scroll', function(){
-  //     if($(window).scrollTop()>70){
-  //         $("header").addClass("fixed");
-  //     }else{
-  //         $("header").removeClass("fixed");
-  //     }
-  // });
   // $(".hamburger, #nav_shadow").on('click', function(){
   //     $(".hamburger").toggleClass("is-active");
   //     $("body").toggleClass("open");
