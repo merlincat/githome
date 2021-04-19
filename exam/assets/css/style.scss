@@ -55,7 +55,8 @@ main {
 }
 #home {
     width: 100%;
-    background: #5fa9cd url(../images/fon_1.png) /cover no-repeat;
+    background: #5fa9cd url(../images/fon_1.png) no-repeat;
+    background-size: cover;
     padding: 266px 0 134px;
     .main_wrap {
         max-width: 650px;
@@ -111,7 +112,7 @@ main {
         padding: 24px 2px 23px;
         border-width: 0;
         border-style: none;
-        border-color: none;
+        border-color: 0;
         border-image: none;
         outline: none;
         &::placeholder {
@@ -214,7 +215,8 @@ main {
     width: calc(50% - 15px);
 }
 #who{
-    background: #3f3938 url(../images/fon_2.png) /cover no-repeat;
+    background: #3f3938 url(../images/fon_2.png) no-repeat;
+    background-size: cover;
     width: 100%;
     padding: 120px 0 118px;
     .container{
@@ -385,7 +387,8 @@ main {
 // search
 #what{
     width: 100%;
-    background:#958caa url(../images/fon_3.png) /cover no-repeat;
+    background:#958caa url(../images/fon_3.png) no-repeat;
+    background-size: cover;
     padding: 230px 0 98px;
 }
 #what, #travel {
@@ -415,7 +418,8 @@ main {
 }
 #travel{
     width: 100%;
-    background: #ff9076  url(../images/fon_4.png) /cover no-repeat;
+    background: #ff9076  url(../images/fon_4.png) no-repeat;
+    background-size: cover;
     padding: 230px 0 100px;
     .container {
         justify-content: flex-end;
@@ -423,7 +427,8 @@ main {
 }
 #review {
     width: 100%;
-    background: #292b2c url(../images/fon_5.png) /cover no-repeat ;
+    background: #292b2c url(../images/fon_5.png) no-repeat;
+    background-size: cover;
     padding: 118px 0 200px;
     .content_h {
         text-align: center;
@@ -544,7 +549,7 @@ main {
 }
 @media screen and (max-width:900px){
     #home{
-        background: #5fa9cd url(../images/fon_1@900.png) /cover no-repeat;
+        background: #5fa9cd url(../images/fon_1@900.png) no-repeat;
     }
     .nav_list {
         .list_item-link {
@@ -560,16 +565,16 @@ main {
         }
     }
     #who {
-        background: #3f3938 url(../images/fon_2@900.png) /cover no-repeat;
+        background: #3f3938 url(../images/fon_2@900.png) no-repeat;
     }
     #what {
-        background:#958caa url(../images/fon_3@900.png) /cover no-repeat;
+        background:#958caa url(../images/fon_3@900.png) no-repeat;
     }
     #travel {
-        background: #ff9076  url(../images/fon_4@900.png) /cover no-repeat;
+        background: #ff9076  url(../images/fon_4@900.png) no-repeat;
     }
     #review {
-        background: #292b2c url(../images/fon_5@900.png) /cover no-repeat ;
+        background: #292b2c url(../images/fon_5@900.png) no-repeat ;
     }
 }
 @media screen and (max-width:780px){
@@ -635,7 +640,7 @@ main {
 }
 @media screen and (max-width:640px){
     #home{
-        background: #5fa9cd url(../images/fon_1@640.png) /cover no-repeat;
+        background: #5fa9cd url(../images/fon_1@640.png) no-repeat;
     }
     .form {
         input {
@@ -657,16 +662,16 @@ main {
         }
     }
     #who {
-        background: #3f3938 url(../images/fon_2@640.png) /cover no-repeat;
+        background: #3f3938 url(../images/fon_2@640.png) no-repeat;
     }
     #what {
-        background:#958caa url(../images/fon_3@640.png) /cover no-repeat;
+        background:#958caa url(../images/fon_3@640.png) no-repeat;
     }
     #travel {
-        background: #ff9076  url(../images/fon_4@640.png) /cover no-repeat;
+        background: #ff9076  url(../images/fon_4@640.png) no-repeat;
     }
     #review {
-        background: #292b2c url(../images/fon_5@640.png) /cover no-repeat ;
+        background: #292b2c url(../images/fon_5@640.png) no-repeat ;
     }
     .footer {
         padding: 50px 0 50px;
@@ -712,19 +717,19 @@ main {
 }
 @media screen and (max-width:480px) {
     #home{
-        background: #5fa9cd url(../images/fon_1@480.png) /cover no-repeat;
+        background: #5fa9cd url(../images/fon_1@480.png) no-repeat;
     }
     #who {
-        background: #3f3938 url(../images/fon_2@480.png) /cover no-repeat;
+        background: #3f3938 url(../images/fon_2@480.png) no-repeat;
     }
     #what {
-        background:#958caa url(../images/fon_3@480.png) /cover no-repeat;
+        background:#958caa url(../images/fon_3@480.png) no-repeat;
     }
     #travel {
-        background: #ff9076  url(../images/fon_4@480.png) /cover no-repeat;
+        background: #ff9076  url(../images/fon_4@480.png) no-repeat;
     }
     #review {
-        background: #292b2c url(../images/fon_5@480.png) /cover no-repeat ;
+        background: #292b2c url(../images/fon_5@480.png) no-repeat ;
     }
 }
 @media screen and (max-width:410px){
